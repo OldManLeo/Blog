@@ -32,7 +32,8 @@
 
 						<div class="text left">
 							<p> {{ post.description }}</p>
-							<p>Автор:  {{ post.author }}</p>
+							<p>Author:  {{ post.author }}</p>
+                            <p class="tags">Tags: {{ post.tags.all|join:', ' }}</p>
 						</div>
 						<div class="cl">&nbsp;</div>
 					</div>
