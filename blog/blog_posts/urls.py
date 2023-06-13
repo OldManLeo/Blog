@@ -4,7 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from .views import create_post
 
 
-urlpatterns = [path('', views.PostView.as_view()),
+urlpatterns = [path('home/', views.PostView.as_view(), name='home'),
                path('<int:pk>/', views.PostDetail.as_view()),
                path('review/<int:pk>', views.AddComments.as_view(), name='add_comments'),
                path('users/', views.UserList.as_view()),
